@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.14.5 (upcoming)
+
+* Use custom properties with sass. Update styles with last from Egeo.
+
 ## 0.14.4 (September 14, 2017)
 
 * Fix buttons squared border in active status
