@@ -8,6 +8,9 @@
  *
  * SPDX-License-Identifier: Apache-2.0.
  */
+ @import '../../node_modules/css-vars/css-vars';
+
+ $css-vars-use-native: true;
 
  // Settings
  $egeo-grid---cols: 12 !default;
@@ -129,8 +132,10 @@
 
    .container-fluid,
    .container {
+      display: flex;
       margin-right: auto;
       margin-left: auto;
+      flex-wrap: wrap;
    }
 
    .container {
@@ -138,13 +143,14 @@
       max-width: $egeo-grid---max;
       padding-right: $egeo-grid---outer-margin;
       padding-left: $egeo-grid---outer-margin;
+      width: 100%;
    }
-
    .row {
-      box-sizing: border-box;
       display: flex;
-      flex: 0 1 auto;
+      flex: 0 1 calc(100% + #{$egeo-grid---gutter-width});
       flex-direction: row;
+      margin: 0 -#{$egeo-grid---half-gutter-width};
+      max-width: calc(100% + #{$egeo-grid---gutter-width});
       flex-wrap: wrap;
    }
 
@@ -174,6 +180,19 @@
         }
     }
 }
+
+@include css-vars((
+   --egeo-grid---cols: $egeo-grid---cols,
+   --egeo-grid---gutter-width: $egeo-grid---gutter-width,
+   --egeo-grid---half-gutter-width: $egeo-grid---half-gutter-width,
+   --egeo-grid---outer-margin: $egeo-grid---outer-margin,
+   --egeo-grid---min: $egeo-grid---min,
+   --egeo-grid---max: $egeo-grid---max,
+   --egeo-grid---sm-viewport: $egeo-grid---sm-viewport,
+   --egeo-grid---md-viewport: $egeo-grid---md-viewport,
+   --egeo-grid---lg-viewport: $egeo-grid---lg-viewport,
+   --egeo-grid-config: $egeo-grid-config
+));
 
 
 @include egeo-grid();

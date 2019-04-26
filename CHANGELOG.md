@@ -1,6 +1,7 @@
 # Changelog
 
 ## 1.0.0 (upcoming)
+* update Egeo theme, include css custom properties.
 
 **Documentation:**
 
