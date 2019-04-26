@@ -28,9 +28,10 @@
     "autoprefixer": "6.7.2",
     "clean-css": "3.4.20",
     "commitizen": "2.9.6",
+    "css-vars": "2.2.0",
     "cz-conventional-changelog": "2.0.0",
     "json": "9.0.4",
-    "node-sass": "4.5.0",
+    "node-sass": "4.6.0",
     "postcss-cli": "2.6.0",
     "rimraf": "2.5.4",
     "sass-lint": "1.10.2"
