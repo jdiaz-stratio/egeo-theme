@@ -9,4 +9,11 @@
  * SPDX-License-Identifier: Apache-2.0.
  */
 
-@import '../../node_modules/sanitize.css/sanitize';
+// This positions have to be sorted in a descendant order. When you add a new position, make sure they are sorted correctly.
+:root{
+   --modal-z-index: 10000;
+   --alert-z-index: 9000;
+   --fullscreen-z-index: 8000;
+   --header-z-index: 7000;
+}
+

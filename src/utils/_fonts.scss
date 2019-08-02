@@ -13,58 +13,65 @@
 
 /// titles:
 .egeo-title-giant {
-   color:         $neutral-11;
-   font-family:   $egeo-nunito-sans-bold;
-   font-size:     $egeo-font-size-xxxlarge;
-   line-height:   $egeo-line-height-xxxlarge;
+   color:         var(--neutral-11, --neutral-fb-11);
+   font-family:   var(--egeo-nunito-sans, --egeo-fb-nunito-sans);
+   font-weight:   700;
+   font-size:     var(--egeo-font-size-xxxlarge, --egeo-fb-font-size-xxxlarge);
+   line-height:   var(--egeo-line-height-xxxlarge, --egeo-fb-line-height-xxxlarge);
 }
 .egeo-title-extra-large {
-   color:         $neutral-11;
-   font-family:   $egeo-nunito-sans-bold;
-   font-size:     $egeo-font-size-xxlarge;
-   line-height:   $egeo-line-height-xxlarge;
+   color:         var(--neutral-11, --neutral-fb-11);
+   font-family:   var(--egeo-nunito-sans, --egeo-fb-nunito-sans);
+   font-weight:   600;
+   font-size:     var(--egeo-font-size-xxlarge, --egeo-fb-font-size-xxlarge);
+   line-height:   var(--egeo-line-height-xxlarge, --egeo-fb-line-height-xxlarge);
 }
 .egeo-title-large {
-   color:         $neutral-11;
-   font-family:   $egeo-nunito-sans-bold;
-   font-size:     $egeo-font-size-xlarge;
-   line-height:   $egeo-line-height-xlarge;
+   color:         var(--neutral-11, --neutral-fb-11);
+   font-family:   var(--egeo-nunito-sans, --egeo-fb-nunito-sans);
+   font-weight:   700;
+   font-size:     var(--egeo-font-size-xlarge, --egeo-fb-font-size-xlarge);
+   line-height:   var(--egeo-line-height-xlarge, --egeo-fb-line-height-xlarge);
 }
 .egeo-title-medium {
-   color:         $neutral-11;
-   font-family:   $egeo-nunito-sans-bold;
-   font-size:     $egeo-font-size-large;
-   line-height:   $egeo-line-height-large;
+   color:         var(--neutral-11, --neutral-fb-11);
+   font-family:   var(--egeo-nunito-sans, --egeo-fb-nunito-sans);
+   font-weight:   700;
+   font-size:     var(--egeo-font-size-large, --egeo-fb-font-size-large);
+   line-height:   var(--egeo-line-height-large, --egeo-fb-line-height-large);
 }
 .egeo-title-small {
-   color:         $neutral-11;
-   font-family:   $egeo-nunito-sans-extraBold;
-   font-size:     $egeo-font-size-medium;
-   line-height:   $egeo-line-height-medium;
+   color:         var(--neutral-11, --neutral-fb-11);
+   font-family:   var(--egeo-nunito-sans, --egeo-fb-nunito-sans);
+   font-weight:   700;
+   font-size:     var(--egeo-font-size-medium, --egeo-fb-font-size-medium);
+   line-height:   var(--egeo-line-height-medium, --egeo-fb-line-height-medium);
 }
 .egeo-title-mini {
-   color:         $neutral-11;
-   font-family:   $egeo-nunito-sans-extraBold;
-   font-size:     $egeo-font-size-small;
-   line-height:   $egeo-line-height-small;
+   color:         var(--neutral-11, --neutral-fb-11);
+   font-family:   var(--egeo-nunito-sans, --egeo-fb-nunito-sans);
+   font-weight:   700;
+   font-size:     var(--egeo-font-size-small, --egeo-fb-font-size-small);
+   line-height:   var(--egeo-line-height-small, --egeo-fb-line-height-small);
 }
 
 /// text:
 .egeo-p {
-   color:         $neutral-10;
-   font-family:   $egeo-nunito-sans;
-   font-size:     $egeo-font-size-small;
-   line-height:   $egeo-line-height-small;
+   color:         var(--neutral-10, --neutral-fb-10);
+   font-weight:   400;
+   font-family:   var(--egeo-nunito-sans, --egeo-fb-nunito-sans);
+   font-size:     var(--egeo-font-size-small, --egeo-fb-font-size-small);
+   line-height:   var(--egeo-line-height-small, --egeo-fb-line-height-small);
 }
 .egeo-p-small {
-   color:         $neutral-10;
-   font-family:   $egeo-nunito-sans;
-   font-size:     $egeo-font-size-xxsmall;
-   line-height:   $egeo-line-height-xxsmall;
+   color:         var(--neutral-10, --neutral-fb-10);
+   font-family:   var(--egeo-nunito-sans, --egeo-fb-nunito-sans);
+   font-weight:   400;
+   font-size:     var(--egeo-font-size-xxsmall, --egeo-fb-font-size-xxsmall);
+   line-height:   var(--egeo-line-height-xxsmall, --egeo-fb-line-height-xxsmall);
 }
 
 
 /// IMPORTS:
-@import '../vendors/fonts/droid-sans-mono';
 @import '../vendors/fonts/stratio_fonticon';
 @import '../vendors/fonts/nunito-sans';
